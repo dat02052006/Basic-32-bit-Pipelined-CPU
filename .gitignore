@@ -1,0 +1,25 @@
+# Quartus compilation and simulation files
+output_files/
+simulation/
+db/
+incremental_db/
+greybox_tmp/
+
+# Quartus generated files
+*.rpt
+*.summary
+*.smsg
+*.qws
+*.pin
+*.sof
+*.pof
+*.qdf
+*.done
+*.jdi
+
+# HTML Reports (Thủ phạm gây hiện chữ HTML)
+*.html
+*.htm
+
+# Backup files
+*.bak
