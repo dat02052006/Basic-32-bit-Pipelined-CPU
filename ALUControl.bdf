@@ -1,0 +1,211 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 288 -56 456 -40)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "ALUOp[2..0]" (rect 5 0 66 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 288 120 456 136)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "Funct[5..0]" (rect 5 0 59 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 1064 -56 1242 -40)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "ALUControl[3..0]" (rect 90 0 172 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(symbol
+	(rect 512 96 728 192)
+	(text "RTypeControl" (rect 5 0 81 14)(font "Arial" (font_size 8)))
+	(text "inst10" (rect 8 80 37 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "Funct[5..0]" (rect 0 0 60 14)(font "Arial" (font_size 8)))
+		(text "Funct[5..0]" (rect 21 27 81 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 216 32)
+		(output)
+		(text "RTypeControl[3..0]" (rect 0 0 105 14)(font "Arial" (font_size 8)))
+		(text "RTypeControl[3..0]" (rect 90 27 195 41)(font "Arial" (font_size 8)))
+		(line (pt 216 32)(pt 200 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 200 80))
+	)
+)
+(symbol
+	(rect 512 -24 736 72)
+	(text "ITypeControl" (rect 5 0 75 14)(font "Arial" (font_size 8)))
+	(text "inst1" (rect 8 80 31 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "ALUOp[1..0]" (rect 0 0 69 14)(font "Arial" (font_size 8)))
+		(text "ALUOp[1..0]" (rect 21 27 90 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 224 32)
+		(output)
+		(text "ITypeControl[3..0]" (rect 0 0 99 14)(font "Arial" (font_size 8)))
+		(text "ITypeControl[3..0]" (rect 104 27 203 41)(font "Arial" (font_size 8)))
+		(line (pt 224 32)(pt 208 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 208 80))
+	)
+)
+(symbol
+	(rect 880 -80 1032 16)
+	(text "mux21_4" (rect 5 0 56 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 80 25 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "S" (rect 0 0 8 14)(font "Arial" (font_size 8)))
+		(text "S" (rect 21 27 29 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "Data0[3..0]" (rect 0 0 61 14)(font "Arial" (font_size 8)))
+		(text "Data0[3..0]" (rect 21 43 82 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "Data1[3..0]" (rect 0 0 61 14)(font "Arial" (font_size 8)))
+		(text "Data1[3..0]" (rect 21 59 82 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 152 32)
+		(output)
+		(text "O[3..0]" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "O[3..0]" (rect 94 27 131 41)(font "Arial" (font_size 8)))
+		(line (pt 152 32)(pt 136 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 136 80))
+	)
+)
+(connector
+	(pt 1032 -48)
+	(pt 1064 -48)
+	(bus)
+)
+(connector
+	(pt 456 -48)
+	(pt 488 -48)
+	(bus)
+)
+(connector
+	(text "ALUOp[2]" (rect 780 -64 828 -52)(font "Arial" ))
+	(pt 488 -48)
+	(pt 880 -48)
+)
+(connector
+	(pt 880 -32)
+	(pt 784 -32)
+	(bus)
+)
+(connector
+	(pt 488 8)
+	(pt 512 8)
+	(bus)
+)
+(connector
+	(text "ALUOp[1..0]" (rect 472 -60 484 1)(font "Arial" )(vertical))
+	(pt 488 -48)
+	(pt 488 8)
+	(bus)
+)
+(connector
+	(pt 784 -32)
+	(pt 784 8)
+	(bus)
+)
+(connector
+	(pt 736 8)
+	(pt 784 8)
+	(bus)
+)
+(connector
+	(pt 880 -16)
+	(pt 832 -16)
+	(bus)
+)
+(connector
+	(pt 832 -16)
+	(pt 832 128)
+	(bus)
+)
+(connector
+	(pt 456 128)
+	(pt 512 128)
+	(bus)
+)
+(connector
+	(pt 728 128)
+	(pt 832 128)
+	(bus)
+)
+(junction (pt 488 -48))

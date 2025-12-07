@@ -1,0 +1,54 @@
+
+<RESULTS project="lab6" revname="__dse_temp_rev" isbest="0" arcname="" wasCompiled="1" name="7-slow">
+ <COPYRIGHT>Copyright (C) 2002 Altera Corporation. All rights reserved.
+                This information and code is highly confidential and proprietary
+                information and code of Altera and is being provided in accordance
+                with and subject to the protections of a non-disclosure agreement
+                which governs its use and disclosure.  Altera products and services
+                are protected under numerous U.S. and foreign patents, maskwork rights
+                copyrights and other intellectual property laws.  Altera assumes no
+                responsibility or liability arising out of the application or use
+                of this information and code. This notice must be retained and
+                reprinted on any copies of this information and code that are
+                permitted to be made.</COPYRIGHT>
+ <SETTING name="PHYSICAL_SYNTHESIS_REGISTER_RETIMING">ON</SETTING>
+ <SETTING name="ROUTER_LCELL_INSERTION_AND_LOGIC_DUPLICATION">ON</SETTING>
+ <SETTING name="STATE_MACHINE_PROCESSING">AUTO</SETTING>
+ <SETTING name="MUX_RESTRUCTURE">OFF</SETTING>
+ <SETTING name="PHYSICAL_SYNTHESIS_REGISTER_DUPLICATION">ON</SETTING>
+ <SETTING name="ROUTER_TIMING_OPTIMIZATION_LEVEL">MAXIMUM</SETTING>
+ <SETTING name="CYCLONEII_OPTIMIZATION_TECHNIQUE">BALANCED</SETTING>
+ <SETTING name="PRE_MAPPING_RESYNTHESIS">OFF</SETTING>
+ <SETTING name="PHYSICAL_SYNTHESIS_COMBO_LOGIC">ON</SETTING>
+ <SETTING name="PHYSICAL_SYNTHESIS_EFFORT">NORMAL</SETTING>
+ <SETTING name="FITTER_EFFORT">AUTO FIT</SETTING>
+ <RESULT name="Clock Setup: 'clk_sys': Actual Time">9.548 ns</RESULT>
+ <RESULT name="Timing Model">Slow</RESULT>
+ <RESULT name="Elapsed Time: EDA Netlist Writer">00:00:02</RESULT>
+ <RESULT name="Clock Recovery: Total Keeper TNS">0 ns</RESULT>
+ <RESULT name="Clock Hold: Total Keeper TNS">0.0 ns</RESULT>
+ <RESULT name="Elapsed Time: Analysis &amp; Synthesis">00:00:20</RESULT>
+ <RESULT name="Elapsed Time: Total">00:01:10</RESULT>
+ <RESULT name="Clock Hold: 'clk_sys': Worst-case Slack">0.391 ns</RESULT>
+ <RESULT name="All Failing Paths">0</RESULT>
+ <RESULT name="Total Thermal Power Dissipation">unknown</RESULT>
+ <RESULT name="Elapsed Time: Assembler">00:00:03</RESULT>
+ <RESULT name="Elapsed Time: TimeQuest Timing Analyzer">00:00:03</RESULT>
+ <RESULT name="Worst-case Slack">0.391 ns (Clock Hold: 'clk_sys')</RESULT>
+ <RESULT name="Total logic elements">2554</RESULT>
+ <RESULT name="Clock Setup: 'clk_sys': Per-clock Keeper TNS">0.000 ns</RESULT>
+ <RESULT name="Clock Removal: Total Keeper TNS">0 ns</RESULT>
+ <RESULT name="Clock Period: Geometric Mean">9.55 ns</RESULT>
+ <RESULT name="Clock Setup: 'clk_sys': Per-clock Edge TNS">0.000 ns</RESULT>
+ <RESULT name="Total block memory bits">0</RESULT>
+ <RESULT name="Elapsed Time: Design Assistant">00:00:01</RESULT>
+ <RESULT name="Clock Setup: 'clk_sys': Fmax">104.73 MHz</RESULT>
+ <RESULT name="Clock Setup: 'clk_sys': Restricted Fmax">104.73 MHz</RESULT>
+ <RESULT name="Clock Setup: Total Keeper TNS">0.0 ns</RESULT>
+ <RESULT name="Elapsed Time: Fitter">00:00:41</RESULT>
+ <RESULT name="Clock Setup: 'clk_sys': Worst-case Slack">0.452 ns</RESULT>
+ <RESULT name="Total Keeper TNS">0.0 ns</RESULT>
+ <RESULT name="Clock Hold: 'clk_sys': Per-clock Keeper TNS">0.000 ns</RESULT>
+ <RESULT name="Clock Hold: 'clk_sys': Per-clock Edge TNS">0.000 ns</RESULT>
+</RESULTS>
+

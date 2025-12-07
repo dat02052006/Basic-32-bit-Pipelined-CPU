@@ -1,0 +1,58 @@
+module ALU_Fast (
+    input [31:0] Data1,
+    input [31:0] Data2,
+    input [3:0]  ALUControl,
+    input [4:0]  Shamt,
+    output reg [31:0] Result, // Dùng reg cho block always
+    output Zero,
+    output Overflow
+);
+
+    // --- 1. KHỐI TOÁN HỌC (Dùng LPM hoặc +) ---
+    wire [31:0] Sum_Result;
+    wire Add_Sub_Cmd = ALUControl[2]; // Bit 2: 0=Add, 1=Sub (Kiểm tra lại bảng mã của bạn)
+    
+    // Quartus tự động dùng Fast Carry Chain ở dòng này
+    // Nếu muốn kỹ hơn thì gọi module lpm_add_sub ở đây
+    assign Sum_Result = (Add_Sub_Cmd) ? (Data1 - Data2) : (Data1 + Data2);
+
+    // Overflow chỉ có ý nghĩa với phép toán số học
+    // Logic đơn giản cho Overflow (tham khảo):
+    assign Overflow = ... (Logic tính tràn dựa trên dấu);
+
+
+    // --- 2. KHỐI LOGIC (Chạy song song) ---
+    wire [31:0] And_Result = Data1 & Data2;
+    wire [31:0] Or_Result  = Data1 | Data2;
+    wire [31:0] Nand_Result = ~(Data1 & Data2);
+
+
+    // --- 3. KHỐI DỊCH (Gọi module Shifter của bạn) ---
+    wire [31:0] Shift_Result;
+    Shifter shift_unit (
+        .Input(Data2), 
+        .S(Shamt), 
+        .SLR(ALUControl[0]), 
+        .Output(Shift_Result)
+    );
+
+
+    // --- 4. BỘ MUX CUỐI CÙNG (Multiplexer) ---
+    always @(*) begin
+        case (ALUControl)
+            4'b0010: Result = Sum_Result;   // ADD
+            4'b0110: Result = Sum_Result;   // SUB
+            4'b0000: Result = And_Result;   // AND
+            4'b0001: Result = Or_Result;    // OR
+            4'b1100: Result = Nand_Result;   // NOR
+            4'b1000: Result = Shift_Result; // SLL
+            4'b1001: Result = Shift_Result; // SRL
+            // Thêm SLT nếu cần...
+            default: Result = 32'd0;
+        endcase
+    end
+
+    // --- 5. CỜ ZERO ---
+    assign Zero = (Result == 32'd0);
+
+endmodule

@@ -1,0 +1,85 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 312 224)
+	(text "FowardingUnit" (rect 5 0 87 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 144 25 156)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "ID_EX_Rs[4..0]" (rect 0 0 83 14)(font "Arial" (font_size 8)))
+		(text "ID_EX_Rs[4..0]" (rect 21 67 104 81)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 16 72)(line_width 3))
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "ID_EX_Rt[4..0]" (rect 0 0 80 14)(font "Arial" (font_size 8)))
+		(text "ID_EX_Rt[4..0]" (rect 21 83 101 97)(font "Arial" (font_size 8)))
+		(line (pt 0 88)(pt 16 88)(line_width 3))
+	)
+	(port
+		(pt 248 56)
+		(input)
+		(text "EX_MEM_RegWrite" (rect 197 16 304 30)(font "Arial" (font_size 8)))
+		(text "EX_MEM_RegWrite" (rect 117 48 224 62)(font "Arial" (font_size 8)))
+		(line (pt 248 56)(pt 232 56))
+	)
+	(port
+		(pt 248 72)
+		(input)
+		(text "EX_MEM_Rd[4..0]" (rect 197 32 296 46)(font "Arial" (font_size 8)))
+		(text "EX_MEM_Rd[4..0]" (rect 125 64 224 78)(font "Arial" (font_size 8)))
+		(line (pt 248 72)(pt 232 72)(color 128 0 255)(line_width 3))
+	)
+	(port
+		(pt 248 88)
+		(input)
+		(text "MEM_WB_RegWrite" (rect 197 48 309 62)(font "Arial" (font_size 8)))
+		(text "MEM_WB_RegWrite" (rect 109 80 221 94)(font "Arial" (font_size 8)))
+		(line (pt 248 88)(pt 232 88))
+	)
+	(port
+		(pt 248 104)
+		(input)
+		(text "MEM_WB_Rd[4..0]" (rect 197 64 300 78)(font "Arial" (font_size 8)))
+		(text "MEM_WB_Rd[4..0]" (rect 125 96 228 110)(font "Arial" (font_size 8)))
+		(line (pt 248 104)(pt 232 104)(color 128 0 255)(line_width 3))
+	)
+	(port
+		(pt 88 0)
+		(output)
+		(text "Foward1[1..0]" (rect 80 24 94 104)(font "Arial" (font_size 8))(vertical))
+		(text "Foward1[1..0]" (rect 80 24 94 104)(font "Arial" (font_size 8))(vertical))
+		(line (pt 88 0)(pt 88 16)(color 0 128 255)(line_width 3))
+	)
+	(port
+		(pt 104 0)
+		(output)
+		(text "Foward2[1..0]" (rect 144 24 158 104)(font "Arial" (font_size 8))(vertical))
+		(text "Foward2[1..0]" (rect 96 24 110 104)(font "Arial" (font_size 8))(vertical))
+		(line (pt 104 0)(pt 104 16)(color 0 128 255)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 232 144))
+	)
+)

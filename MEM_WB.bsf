@@ -1,0 +1,106 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 392 224)
+	(text "MEM_WB" (rect 5 0 58 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 144 25 156)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "RegWrite" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "RegWrite" (rect 21 27 72 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "MemtoReg" (rect 0 0 59 14)(font "Arial" (font_size 8)))
+		(text "MemtoReg" (rect 21 43 80 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "ReadData_Mem[31..0]" (rect 0 0 123 14)(font "Arial" (font_size 8)))
+		(text "ReadData_Mem[31..0]" (rect 21 59 144 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "ALUresult[31..0]" (rect 0 0 92 14)(font "Arial" (font_size 8)))
+		(text "ALUresult[31..0]" (rect 21 75 113 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "WriteReg[4..0]" (rect 0 0 80 14)(font "Arial" (font_size 8)))
+		(text "WriteReg[4..0]" (rect 21 91 101 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 152 160)
+		(input)
+		(text "CLK" (rect 144 109 158 132)(font "Arial" (font_size 8))(vertical))
+		(text "CLK" (rect 144 109 158 132)(font "Arial" (font_size 8))(vertical))
+		(line (pt 152 160)(pt 152 144))
+	)
+	(port
+		(pt 328 32)
+		(output)
+		(text "RegWrite_out" (rect 0 0 76 14)(font "Arial" (font_size 8)))
+		(text "RegWrite_out" (rect 231 27 307 41)(font "Arial" (font_size 8)))
+		(line (pt 328 32)(pt 312 32))
+	)
+	(port
+		(pt 328 48)
+		(output)
+		(text "MemtoReg_out" (rect 0 0 83 14)(font "Arial" (font_size 8)))
+		(text "MemtoReg_out" (rect 224 43 307 57)(font "Arial" (font_size 8)))
+		(line (pt 328 48)(pt 312 48))
+	)
+	(port
+		(pt 328 80)
+		(output)
+		(text "ReadData_Mem_out[31..0]" (rect 0 0 148 14)(font "Arial" (font_size 8)))
+		(text "ReadData_Mem_out[31..0]" (rect 159 75 307 89)(font "Arial" (font_size 8)))
+		(line (pt 328 80)(pt 312 80)(line_width 3))
+	)
+	(port
+		(pt 328 64)
+		(output)
+		(text "ALUresult_out[31..0]" (rect 0 0 116 14)(font "Arial" (font_size 8)))
+		(text "ALUresult_out[31..0]" (rect 191 59 307 73)(font "Arial" (font_size 8)))
+		(line (pt 328 64)(pt 312 64)(line_width 3))
+	)
+	(port
+		(pt 328 96)
+		(output)
+		(text "WriteReg_out[4..0]" (rect 0 0 105 14)(font "Arial" (font_size 8)))
+		(text "WriteReg_out[4..0]" (rect 202 91 307 105)(font "Arial" (font_size 8)))
+		(line (pt 328 96)(pt 312 96)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 312 144))
+	)
+)

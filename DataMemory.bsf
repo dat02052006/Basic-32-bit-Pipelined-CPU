@@ -1,0 +1,71 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 320 232)
+	(text "DataMemory" (rect 5 0 75 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 112 25 124)(font "Arial" ))
+	(port
+		(pt 0 104)
+		(input)
+		(text "WriteData[31..0]" (rect 0 0 90 14)(font "Arial" (font_size 8)))
+		(text "WriteData[31..0]" (rect 24 96 114 110)(font "Arial" (font_size 8)))
+		(line (pt 0 104)(pt 16 104)(line_width 3))
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "Address[31..0]" (rect 0 0 84 14)(font "Arial" (font_size 8)))
+		(text "Address[31..0]" (rect 21 83 105 97)(font "Arial" (font_size 8)))
+		(line (pt 0 88)(pt 16 88)(line_width 3))
+	)
+	(port
+		(pt 72 0)
+		(input)
+		(text "MemRead" (rect 64 24 78 79)(font "Arial" (font_size 8))(vertical))
+		(text "MemRead" (rect 64 24 78 79)(font "Arial" (font_size 8))(vertical))
+		(line (pt 72 0)(pt 72 16))
+	)
+	(port
+		(pt 152 0)
+		(input)
+		(text "MemWrite" (rect 144 24 158 79)(font "Arial" (font_size 8))(vertical))
+		(text "MemWrite" (rect 144 24 158 79)(font "Arial" (font_size 8))(vertical))
+		(line (pt 152 0)(pt 152 16))
+	)
+	(port
+		(pt 120 168)
+		(input)
+		(text "CLK" (rect 112 117 126 140)(font "Arial" (font_size 8))(vertical))
+		(text "CLK" (rect 112 125 126 148)(font "Arial" (font_size 8))(vertical))
+		(line (pt 120 168)(pt 120 152))
+	)
+	(port
+		(pt 256 88)
+		(output)
+		(text "ReadData[31..0]" (rect 24 0 114 14)(font "Arial" (font_size 8)))
+		(text "ReadData[31..0]" (rect 145 83 235 97)(font "Arial" (font_size 8)))
+		(line (pt 256 88)(pt 240 88)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 240 152))
+	)
+)

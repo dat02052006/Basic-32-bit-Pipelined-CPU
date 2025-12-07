@@ -1,0 +1,267 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 128 592)
+	(text "decoder532e" (rect 5 0 80 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 560 25 572)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "A[4..0]" (rect 0 0 37 14)(font "Arial" (font_size 8)))
+		(text "A[4..0]" (rect 21 27 58 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "E" (rect 0 0 7 14)(font "Arial" (font_size 8)))
+		(text "E" (rect 21 43 28 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 112 32)
+		(output)
+		(text "Y0" (rect 0 0 16 14)(font "Arial" (font_size 8)))
+		(text "Y0" (rect 75 27 91 41)(font "Arial" (font_size 8)))
+		(line (pt 112 32)(pt 96 32))
+	)
+	(port
+		(pt 112 48)
+		(output)
+		(text "Y1" (rect 0 0 16 14)(font "Arial" (font_size 8)))
+		(text "Y1" (rect 75 43 91 57)(font "Arial" (font_size 8)))
+		(line (pt 112 48)(pt 96 48))
+	)
+	(port
+		(pt 112 64)
+		(output)
+		(text "Y2" (rect 0 0 16 14)(font "Arial" (font_size 8)))
+		(text "Y2" (rect 75 59 91 73)(font "Arial" (font_size 8)))
+		(line (pt 112 64)(pt 96 64))
+	)
+	(port
+		(pt 112 80)
+		(output)
+		(text "Y3" (rect 0 0 16 14)(font "Arial" (font_size 8)))
+		(text "Y3" (rect 75 75 91 89)(font "Arial" (font_size 8)))
+		(line (pt 112 80)(pt 96 80))
+	)
+	(port
+		(pt 112 96)
+		(output)
+		(text "Y4" (rect 0 0 16 14)(font "Arial" (font_size 8)))
+		(text "Y4" (rect 75 91 91 105)(font "Arial" (font_size 8)))
+		(line (pt 112 96)(pt 96 96))
+	)
+	(port
+		(pt 112 112)
+		(output)
+		(text "Y5" (rect 0 0 16 14)(font "Arial" (font_size 8)))
+		(text "Y5" (rect 75 107 91 121)(font "Arial" (font_size 8)))
+		(line (pt 112 112)(pt 96 112))
+	)
+	(port
+		(pt 112 128)
+		(output)
+		(text "Y6" (rect 0 0 16 14)(font "Arial" (font_size 8)))
+		(text "Y6" (rect 75 123 91 137)(font "Arial" (font_size 8)))
+		(line (pt 112 128)(pt 96 128))
+	)
+	(port
+		(pt 112 144)
+		(output)
+		(text "Y7" (rect 0 0 16 14)(font "Arial" (font_size 8)))
+		(text "Y7" (rect 75 139 91 153)(font "Arial" (font_size 8)))
+		(line (pt 112 144)(pt 96 144))
+	)
+	(port
+		(pt 112 160)
+		(output)
+		(text "Y8" (rect 0 0 16 14)(font "Arial" (font_size 8)))
+		(text "Y8" (rect 75 155 91 169)(font "Arial" (font_size 8)))
+		(line (pt 112 160)(pt 96 160))
+	)
+	(port
+		(pt 112 176)
+		(output)
+		(text "Y9" (rect 0 0 16 14)(font "Arial" (font_size 8)))
+		(text "Y9" (rect 75 171 91 185)(font "Arial" (font_size 8)))
+		(line (pt 112 176)(pt 96 176))
+	)
+	(port
+		(pt 112 192)
+		(output)
+		(text "Y10" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "Y10" (rect 68 187 91 201)(font "Arial" (font_size 8)))
+		(line (pt 112 192)(pt 96 192))
+	)
+	(port
+		(pt 112 208)
+		(output)
+		(text "Y11" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "Y11" (rect 68 203 91 217)(font "Arial" (font_size 8)))
+		(line (pt 112 208)(pt 96 208))
+	)
+	(port
+		(pt 112 224)
+		(output)
+		(text "Y12" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "Y12" (rect 68 219 91 233)(font "Arial" (font_size 8)))
+		(line (pt 112 224)(pt 96 224))
+	)
+	(port
+		(pt 112 240)
+		(output)
+		(text "Y13" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "Y13" (rect 68 235 91 249)(font "Arial" (font_size 8)))
+		(line (pt 112 240)(pt 96 240))
+	)
+	(port
+		(pt 112 256)
+		(output)
+		(text "Y14" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "Y14" (rect 68 251 91 265)(font "Arial" (font_size 8)))
+		(line (pt 112 256)(pt 96 256))
+	)
+	(port
+		(pt 112 272)
+		(output)
+		(text "Y15" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "Y15" (rect 68 267 91 281)(font "Arial" (font_size 8)))
+		(line (pt 112 272)(pt 96 272))
+	)
+	(port
+		(pt 112 288)
+		(output)
+		(text "Y16" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "Y16" (rect 68 283 91 297)(font "Arial" (font_size 8)))
+		(line (pt 112 288)(pt 96 288))
+	)
+	(port
+		(pt 112 304)
+		(output)
+		(text "Y17" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "Y17" (rect 68 299 91 313)(font "Arial" (font_size 8)))
+		(line (pt 112 304)(pt 96 304))
+	)
+	(port
+		(pt 112 320)
+		(output)
+		(text "Y18" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "Y18" (rect 68 315 91 329)(font "Arial" (font_size 8)))
+		(line (pt 112 320)(pt 96 320))
+	)
+	(port
+		(pt 112 336)
+		(output)
+		(text "Y19" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "Y19" (rect 68 331 91 345)(font "Arial" (font_size 8)))
+		(line (pt 112 336)(pt 96 336))
+	)
+	(port
+		(pt 112 352)
+		(output)
+		(text "Y20" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "Y20" (rect 68 347 91 361)(font "Arial" (font_size 8)))
+		(line (pt 112 352)(pt 96 352))
+	)
+	(port
+		(pt 112 368)
+		(output)
+		(text "Y21" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "Y21" (rect 68 363 91 377)(font "Arial" (font_size 8)))
+		(line (pt 112 368)(pt 96 368))
+	)
+	(port
+		(pt 112 384)
+		(output)
+		(text "Y22" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "Y22" (rect 68 379 91 393)(font "Arial" (font_size 8)))
+		(line (pt 112 384)(pt 96 384))
+	)
+	(port
+		(pt 112 400)
+		(output)
+		(text "Y23" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "Y23" (rect 68 395 91 409)(font "Arial" (font_size 8)))
+		(line (pt 112 400)(pt 96 400))
+	)
+	(port
+		(pt 112 416)
+		(output)
+		(text "Y24" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "Y24" (rect 68 411 91 425)(font "Arial" (font_size 8)))
+		(line (pt 112 416)(pt 96 416))
+	)
+	(port
+		(pt 112 432)
+		(output)
+		(text "Y25" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "Y25" (rect 68 427 91 441)(font "Arial" (font_size 8)))
+		(line (pt 112 432)(pt 96 432))
+	)
+	(port
+		(pt 112 448)
+		(output)
+		(text "Y26" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "Y26" (rect 68 443 91 457)(font "Arial" (font_size 8)))
+		(line (pt 112 448)(pt 96 448))
+	)
+	(port
+		(pt 112 464)
+		(output)
+		(text "Y27" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "Y27" (rect 68 459 91 473)(font "Arial" (font_size 8)))
+		(line (pt 112 464)(pt 96 464))
+	)
+	(port
+		(pt 112 480)
+		(output)
+		(text "Y28" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "Y28" (rect 68 475 91 489)(font "Arial" (font_size 8)))
+		(line (pt 112 480)(pt 96 480))
+	)
+	(port
+		(pt 112 496)
+		(output)
+		(text "Y29" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "Y29" (rect 68 491 91 505)(font "Arial" (font_size 8)))
+		(line (pt 112 496)(pt 96 496))
+	)
+	(port
+		(pt 112 512)
+		(output)
+		(text "Y30" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "Y30" (rect 68 507 91 521)(font "Arial" (font_size 8)))
+		(line (pt 112 512)(pt 96 512))
+	)
+	(port
+		(pt 112 528)
+		(output)
+		(text "Y31" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "Y31" (rect 68 523 91 537)(font "Arial" (font_size 8)))
+		(line (pt 112 528)(pt 96 528))
+	)
+	(drawing
+		(rectangle (rect 16 16 96 560))
+	)
+)

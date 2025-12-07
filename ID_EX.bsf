@@ -1,0 +1,295 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 64 64 336 416)
+	(text "ID_EX" (rect 5 0 38 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 336 25 348)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "RegWrite" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "RegWrite" (rect 21 27 72 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "MemtoReg" (rect 0 0 59 14)(font "Arial" (font_size 8)))
+		(text "MemtoReg" (rect 21 43 80 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "MemRead" (rect 0 0 55 14)(font "Arial" (font_size 8)))
+		(text "MemRead" (rect 21 59 76 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "MemWrite" (rect 0 0 55 14)(font "Arial" (font_size 8)))
+		(text "MemWrite" (rect 21 75 76 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "Branch" (rect 0 0 41 14)(font "Arial" (font_size 8)))
+		(text "Branch" (rect 21 91 62 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "Branche" (rect 0 0 48 14)(font "Arial" (font_size 8)))
+		(text "Branche" (rect 21 107 69 121)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "ALUsrc" (rect 0 0 43 14)(font "Arial" (font_size 8)))
+		(text "ALUsrc" (rect 21 123 64 137)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "ALUOp[2..0]" (rect 0 0 69 14)(font "Arial" (font_size 8)))
+		(text "ALUOp[2..0]" (rect 21 139 90 153)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "RegDst" (rect 0 0 41 14)(font "Arial" (font_size 8)))
+		(text "RegDst" (rect 21 155 62 169)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 16 160))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "PCadd4[31..0]" (rect 0 0 79 14)(font "Arial" (font_size 8)))
+		(text "PCadd4[31..0]" (rect 21 171 100 185)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 16 176)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "ReadData1[31..0]" (rect 0 0 97 14)(font "Arial" (font_size 8)))
+		(text "ReadData1[31..0]" (rect 21 187 118 201)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 16 192)(line_width 3))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "ReadData2[31..0]" (rect 0 0 97 14)(font "Arial" (font_size 8)))
+		(text "ReadData2[31..0]" (rect 21 203 118 217)(font "Arial" (font_size 8)))
+		(line (pt 0 208)(pt 16 208)(line_width 3))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "Extend[31..0]" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "Extend[31..0]" (rect 21 219 95 233)(font "Arial" (font_size 8)))
+		(line (pt 0 224)(pt 16 224)(line_width 3))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "Rs[4..0]" (rect 0 0 43 14)(font "Arial" (font_size 8)))
+		(text "Rs[4..0]" (rect 21 235 64 249)(font "Arial" (font_size 8)))
+		(line (pt 0 240)(pt 16 240)(line_width 3))
+	)
+	(port
+		(pt 0 256)
+		(input)
+		(text "Rt[4..0]" (rect 0 0 40 14)(font "Arial" (font_size 8)))
+		(text "Rt[4..0]" (rect 21 251 61 265)(font "Arial" (font_size 8)))
+		(line (pt 0 256)(pt 16 256)(line_width 3))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "Rd[4..0]" (rect 0 0 43 14)(font "Arial" (font_size 8)))
+		(text "Rd[4..0]" (rect 21 267 64 281)(font "Arial" (font_size 8)))
+		(line (pt 0 272)(pt 16 272)(line_width 3))
+	)
+	(port
+		(pt 0 288)
+		(input)
+		(text "Shamt[4..0]" (rect 0 0 63 14)(font "Arial" (font_size 8)))
+		(text "Shamt[4..0]" (rect 21 283 84 297)(font "Arial" (font_size 8)))
+		(line (pt 0 288)(pt 16 288)(line_width 3))
+	)
+	(port
+		(pt 0 304)
+		(input)
+		(text "Funct[5..0]" (rect 0 0 60 14)(font "Arial" (font_size 8)))
+		(text "Funct[5..0]" (rect 21 299 81 313)(font "Arial" (font_size 8)))
+		(line (pt 0 304)(pt 16 304)(line_width 3))
+	)
+	(port
+		(pt 120 352)
+		(input)
+		(text "CLK" (rect 120 301 134 324)(font "Arial" (font_size 8))(vertical))
+		(text "CLK" (rect 112 309 126 332)(font "Arial" (font_size 8))(vertical))
+		(line (pt 120 352)(pt 120 336))
+	)
+	(port
+		(pt 152 352)
+		(input)
+		(text "Flush" (rect 136 301 150 331)(font "Arial" (font_size 8))(vertical))
+		(text "Flush" (rect 144 301 158 331)(font "Arial" (font_size 8))(vertical))
+		(line (pt 152 352)(pt 152 336))
+	)
+	(port
+		(pt 272 32)
+		(output)
+		(text "RegWrite_out" (rect 0 0 76 14)(font "Arial" (font_size 8)))
+		(text "RegWrite_out" (rect 175 27 251 41)(font "Arial" (font_size 8)))
+		(line (pt 272 32)(pt 256 32))
+	)
+	(port
+		(pt 272 48)
+		(output)
+		(text "MemtoReg_out" (rect 0 0 83 14)(font "Arial" (font_size 8)))
+		(text "MemtoReg_out" (rect 168 43 251 57)(font "Arial" (font_size 8)))
+		(line (pt 272 48)(pt 256 48))
+	)
+	(port
+		(pt 272 64)
+		(output)
+		(text "MemRead_out" (rect 0 0 80 14)(font "Arial" (font_size 8)))
+		(text "MemRead_out" (rect 171 59 251 73)(font "Arial" (font_size 8)))
+		(line (pt 272 64)(pt 256 64))
+	)
+	(port
+		(pt 272 80)
+		(output)
+		(text "MemWrite_out" (rect 0 0 80 14)(font "Arial" (font_size 8)))
+		(text "MemWrite_out" (rect 171 75 251 89)(font "Arial" (font_size 8)))
+		(line (pt 272 80)(pt 256 80))
+	)
+	(port
+		(pt 272 96)
+		(output)
+		(text "Branch_out" (rect 0 0 66 14)(font "Arial" (font_size 8)))
+		(text "Branch_out" (rect 185 91 251 105)(font "Arial" (font_size 8)))
+		(line (pt 272 96)(pt 256 96))
+	)
+	(port
+		(pt 272 112)
+		(output)
+		(text "Branche_out" (rect 0 0 73 14)(font "Arial" (font_size 8)))
+		(text "Branche_out" (rect 178 107 251 121)(font "Arial" (font_size 8)))
+		(line (pt 272 112)(pt 256 112))
+	)
+	(port
+		(pt 272 128)
+		(output)
+		(text "ALUsrc_out" (rect 0 0 68 14)(font "Arial" (font_size 8)))
+		(text "ALUsrc_out" (rect 183 123 251 137)(font "Arial" (font_size 8)))
+		(line (pt 272 128)(pt 256 128))
+	)
+	(port
+		(pt 272 144)
+		(output)
+		(text "ALUOp_out[2..0]" (rect 0 0 94 14)(font "Arial" (font_size 8)))
+		(text "ALUOp_out[2..0]" (rect 157 139 251 153)(font "Arial" (font_size 8)))
+		(line (pt 272 144)(pt 256 144)(line_width 3))
+	)
+	(port
+		(pt 272 160)
+		(output)
+		(text "RegDst_out" (rect 0 0 66 14)(font "Arial" (font_size 8)))
+		(text "RegDst_out" (rect 185 155 251 169)(font "Arial" (font_size 8)))
+		(line (pt 272 160)(pt 256 160))
+	)
+	(port
+		(pt 272 176)
+		(output)
+		(text "PCadd4_out[31..0]" (rect 0 0 103 14)(font "Arial" (font_size 8)))
+		(text "PCadd4_out[31..0]" (rect 148 171 251 185)(font "Arial" (font_size 8)))
+		(line (pt 272 176)(pt 256 176)(line_width 3))
+	)
+	(port
+		(pt 272 192)
+		(output)
+		(text "ReadData1_out[31..0]" (rect 0 0 122 14)(font "Arial" (font_size 8)))
+		(text "ReadData1_out[31..0]" (rect 129 187 251 201)(font "Arial" (font_size 8)))
+		(line (pt 272 192)(pt 256 192)(line_width 3))
+	)
+	(port
+		(pt 272 208)
+		(output)
+		(text "ReadData2_out[31..0]" (rect 0 0 122 14)(font "Arial" (font_size 8)))
+		(text "ReadData2_out[31..0]" (rect 129 203 251 217)(font "Arial" (font_size 8)))
+		(line (pt 272 208)(pt 256 208)(line_width 3))
+	)
+	(port
+		(pt 272 224)
+		(output)
+		(text "Extend_out[31..0]" (rect 0 0 99 14)(font "Arial" (font_size 8)))
+		(text "Extend_out[31..0]" (rect 152 219 251 233)(font "Arial" (font_size 8)))
+		(line (pt 272 224)(pt 256 224)(line_width 3))
+	)
+	(port
+		(pt 272 240)
+		(output)
+		(text "Rs_out[4..0]" (rect 0 0 68 14)(font "Arial" (font_size 8)))
+		(text "Rs_out[4..0]" (rect 183 235 251 249)(font "Arial" (font_size 8)))
+		(line (pt 272 240)(pt 256 240)(line_width 3))
+	)
+	(port
+		(pt 272 256)
+		(output)
+		(text "Rt_out[4..0]" (rect 0 0 64 14)(font "Arial" (font_size 8)))
+		(text "Rt_out[4..0]" (rect 187 251 251 265)(font "Arial" (font_size 8)))
+		(line (pt 272 256)(pt 256 256)(line_width 3))
+	)
+	(port
+		(pt 272 272)
+		(output)
+		(text "Rd_out[4..0]" (rect 0 0 68 14)(font "Arial" (font_size 8)))
+		(text "Rd_out[4..0]" (rect 183 267 251 281)(font "Arial" (font_size 8)))
+		(line (pt 272 272)(pt 256 272)(line_width 3))
+	)
+	(port
+		(pt 272 288)
+		(output)
+		(text "Shamt_out[4..0]" (rect 0 0 88 14)(font "Arial" (font_size 8)))
+		(text "Shamt_out[4..0]" (rect 163 283 251 297)(font "Arial" (font_size 8)))
+		(line (pt 272 288)(pt 256 288)(line_width 3))
+	)
+	(port
+		(pt 272 304)
+		(output)
+		(text "Funct_out[5..0]" (rect 0 0 84 14)(font "Arial" (font_size 8)))
+		(text "Funct_out[5..0]" (rect 167 299 251 313)(font "Arial" (font_size 8)))
+		(line (pt 272 304)(pt 256 304)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 256 336))
+	)
+)
